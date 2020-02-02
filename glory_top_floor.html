@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Shikwa - The Ruins</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+<script type="text/javascript">
+jQuery(function($){	
+	$.supersized({
+		// Functionality
+		autoplay:0,
+		slide_interval :8000,	// Length between transitions
+		transition :   0,	// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed :700,	// Speed of transition
+		horizontal_center: 1,
+		// fit_always:1,
+		fit_landscape:1,
+		// Components							
+		slide_links : 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+		slides : [
+		{image : 'gallery/MWH-Glory/TopFloor/1- The Rooftop Terrace Garden.jpg',  title : 'The Rooftop Terrace Garden', thumb : 'gallery/MWH-Glory/TopFloor/1- The Rooftop Terrace Garden_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/2- The Rooftop Terrace Garden.jpg',  title : 'The Rooftop Terrace Garden', thumb : 'gallery/MWH-Glory/TopFloor/2- The Rooftop Terrace Garden_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/3- Baradari.jpg',  title : 'Baradari', thumb : 'gallery/MWH-Glory/TopFloor/3- Baradari_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/4- Baradari.jpg',  title : 'Baradari', thumb : 'gallery/MWH-Glory/TopFloor/4- Baradari_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/5- The Sunset with River Yamuna in the Foreground from the Rooftop.jpg',  title : 'The Sunset with River Yamuna in the Foreground from the Rooftop', thumb : 'gallery/MWH-Glory/TopFloor/5- The Sunset with River Yamuna in the Foreground from the Rooftop_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/6- The Sunset with River Yamuna in the Foreground from the Rooftop.jpg',  title : 'The Sunset with River Yamuna in the Foreground from the Rooftop', thumb : 'gallery/MWH-Glory/TopFloor/6- The Sunset with River Yamuna in the Foreground from the Rooftop_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/7- The Sunset from the Rooftop.jpg',  title : 'The Sunset from the Rooftop', thumb : 'gallery/MWH-Glory/TopFloor/7- The Sunset from the Rooftop_th.jpg' },
+		{image : 'gallery/MWH-Glory/TopFloor/8- The Sunset from Baradari with River Yamuna in the Foreground.jpg',  title : 'The Sunset from Baradari with River Yamuna in the Foreground', thumb : 'gallery/MWH-Glory/TopFloor/8- The Sunset from Baradari with River Yamuna in the Foreground_th.jpg' },
+		
+		],
+	});
+    });
+	
+    
+</script>
+</head>
+<body>
+<a href="javascript:history.back();"><img src="images/goback.png" width="144" height="40" border="0" /></a>
+<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption" align="center"></div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

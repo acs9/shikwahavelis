@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Shikwa - The Ruins</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+
+<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+<script type="text/javascript">
+jQuery(function($){	
+	$.supersized({
+		// Functionality
+		autoplay:0,
+		slide_interval :8000,	// Length between transitions
+		transition :   1,	// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed :700,	// Speed of transition
+		horizontal_center: 1,
+		// fit_always:1,
+		fit_landscape:1,
+		// Components							
+		slide_links : 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+		slides : [
+		{image : 'gallery/MWH-Glory/FirstFloor/1- The Africa Lounge - a View from the Balcony.jpg',  title : 'The Africa Lounge - a View from the Balcony', thumb : 'gallery/MWH-Glory/FirstFloor/1- The Africa Lounge - a View from the Balcony_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/2-  The Africa Lounge.jpg',  title : 'The Africa Lounge', thumb : 'gallery/MWH-Glory/FirstFloor/2-  The Africa Lounge_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/3- The Africa Lounge - East Side.jpg',  title : 'The Africa Lounge - East Side', thumb : 'gallery/MWH-Glory/FirstFloor/3- The Africa Lounge - East Side_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/4- The Africa Lounge - West Side.jpg',  title : 'The Africa Lounge - West Side', thumb : 'gallery/MWH-Glory/FirstFloor/4- The Africa Lounge - West Side_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/5- The Riverside Room - A Guest Room.jpg',  title : 'A Guest Room', thumb : 'gallery/MWH-Glory/FirstFloor/5- The Riverside Room - A Guest Room_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/6- The Village Side Room - A Guest Room.jpg',  title : 'A Guest Room', thumb : 'gallery/MWH-Glory/FirstFloor/6- The Village Side Room - A Guest Room_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/7 - The Village Side Room.jpg',  title : 'The Village Side Room', thumb : 'gallery/MWH-Glory/FirstFloor/7 - The Village Side Room_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/8- The Music Room.jpg',  title : 'The Music Room', thumb : 'gallery/MWH-Glory/FirstFloor/8- The Music Room_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/9- The Music Room.jpg',  title : 'The Music Room', thumb : 'gallery/MWH-Glory/FirstFloor/9- The Music Room_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/10 - The Personal Lounge.jpg',  title : 'The Personal Lounge', thumb : 'gallery/MWH-Glory/FirstFloor/10 - The Personal Lounge_th.jpg' },
+		{image : 'gallery/MWH-Glory/FirstFloor/11- The Personal Lounge.jpg',  title : 'The Personal Lounge', thumb : 'gallery/MWH-Glory/FirstFloor/11- The Personal Lounge_th.jpg' },
+
+		],
+	});
+    });
+	
+    
+</script>
+</head>
+<body>
+<a href="javascript:history.back();"><img src="images/goback.png" width="144" height="40" border="0" /></a>
+<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption" align="center"></div>
+					
+			
+		</div>
+	</div>
+	
+</body>
+</html>

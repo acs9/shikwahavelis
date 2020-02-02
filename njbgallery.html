@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Shikwa - The Ruins</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+
+<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+<script type="text/javascript">
+jQuery(function($){	
+	$.supersized({
+		// Functionality
+		autoplay:0,
+		slide_interval :8000,	// Length between transitions
+		transition :   1,	// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed :700,	// Speed of transition
+		horizontal_center: 1,
+		// fit_always:1,
+		fit_landscape:1,
+		// Components							
+		slide_links : 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+		slides : [
+		{image : 'gallery/NJB/1.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/1_th.jpg" />' },
+		{image : 'gallery/NJB/2.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/2_th.jpg"' },
+		{image : 'gallery/NJB/3.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/3_th.jpg"' },
+		{image : 'gallery/NJB/4.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/4_th.jpg"' },
+		{image : 'gallery/NJB/5.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/5_th.jpg"' },
+		{image : 'gallery/NJB/6.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/6_th.jpg"' },
+		{image : 'gallery/NJB/7.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/7_th.jpg"' },
+		{image : 'gallery/NJB/8.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/8_th.jpg"' },
+		{image : 'gallery/NJB/9.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/9_th.jpg"' },
+		{image : 'gallery/NJB/10.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/10_th.jpg"' },
+		{image : 'gallery/NJB/11.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/11_th.jpg"' },
+		{image : 'gallery/NJB/12.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/12_th.jpg"' },
+		{image : 'gallery/NJB/13.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/13_th.jpg"' },
+		{image : 'gallery/NJB/14.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/14_th.jpg"' },
+		{image : 'gallery/NJB/15.jpg',  title : 'Activities of the NJB', thumb : 'gallery/NJB/11_th.jpg"' },
+
+		],
+	});
+    });
+	
+    
+</script>
+</head>
+<body>
+<a href="javascript:history.back();"><img src="images/goback.png" width="144" height="40" border="0" /></a>
+<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			<!--Slide captions displayed here-->
+			<div id="slidecaption" align="center"></div>			
+		</div>
+	</div>
+	
+</body>
+</html>
